@@ -1,10 +1,12 @@
 {
-  "name": "arq-site1",
+  "name": "siteArq",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build-gh": "rm -rf dist && ng build --base-href 'https://leogilardi6.github.io/siteArq/'",
+    "deploy":"npx angular-cli-ghpages --dir=dist/siteArq",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

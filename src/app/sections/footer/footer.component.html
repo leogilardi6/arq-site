@@ -1,1 +1,18 @@
-<p>footer works!</p>
+<section class="footer">
+    <div class="info">
+        @for (item of items.info; track item.id) {
+        <span class=" text-lg font-semibold whitespace-nowrap text-white">
+            {{item.content}}
+        </span>
+        }
+    </div>
+    <div class="social">
+        @for (item of items.social; track item.id) {
+        <div class="social-content">
+            <span class=" text-sm font-semibold whitespace-nowrap text-white">{{item.front_text}}</span>
+            <img class="social-image" [src]="item.image" [alt]="item.item">
+        </div>
+        }
+
+    </div>
+</section>

@@ -4,11 +4,12 @@ export const nav_items = {
     text_bold: 'Arquitecto',
     home_section: { title: 'home', route: 'home' },
     sections: [
-        { title: 'proyectos', id: 1, route: 'projects' },
-        { title: 'estudio', id: 2 },
-        // { title: 'premios', id: 3 },
-        // { title: 'noticias', id: 4 },
-        // { title: 'publicaciones', id: 5 },
-        { title: 'contacto', id: 6, route: 'contact' },
+        { title: 'home', id: 1, route: '' },
+        { title: 'proyectos', id: 2, route: 'projects' },
+        { title: 'estudio', id: 3 },
+        // { title: 'premios', id: 4 },
+        // { title: 'noticias', id: 5 },
+        // { title: 'publicaciones', id: 6 },
+        { title: 'contacto', id: 7, route: 'contact' },
     ]
 }

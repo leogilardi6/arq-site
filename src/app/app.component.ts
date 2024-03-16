@@ -22,7 +22,7 @@ export class AppComponent implements OnInit, OnDestroy {
   currentImageIndex: number = 0;
   currentImage: string = backgrounds[this.currentImageIndex];
   private router = inject(Router);
-  backgroundInt: NodeJS.Timeout = new NodeJS.Timeout();
+  backgroundInt: any;
 
   ngOnInit() {
     initFlowbite();
@@ -42,6 +42,8 @@ export class AppComponent implements OnInit, OnDestroy {
   ngOnChanges() {}
 
   ngOnDestroy(): void {
-    clearInterval(this.backgroundInt);
+    if (this.backgroundInt) {
+      clearInterval(this.backgroundInt);
+    }
   }
 }

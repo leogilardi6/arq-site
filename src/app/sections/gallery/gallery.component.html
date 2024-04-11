@@ -1,0 +1,21 @@
+<section class="gallery">
+  @for (content of project_content; track content.id) { @if (content.image_text)
+  {
+  <div
+    [ngStyle]="{ width: content.width + 'pc', height: content.height + 'px' }"
+    class="content"
+  >
+    {{ content.image_title }}
+  </div>
+  <span [ngStyle]="{ width: 100 - content.width + 'pc' }">
+    {{ content.image_text }}
+  </span>
+  }@else{
+  <div
+    [ngStyle]="{ width: content.width + 'pc', height: content.height + 'px' }"
+    class="content"
+  >
+    {{ content.image_title }}
+  </div>
+  } }
+</section>

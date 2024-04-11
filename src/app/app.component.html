@@ -1,7 +1,11 @@
-<section
-  class="app-container"
-  [ngStyle]="{ 'background-image': 'url(' + currentImage + ')' }"
->
+<!-- [ngStyle]="{
+    'background-image':
+      'url( ../assets/images/backgrounds/' + currentImage + ')'
+  }" -->
+<!-- [ngStyle]="{
+    'background-image': 'url(../assets/images/backgrounds/background.jpg)'
+  }" -->
+<section class="app-container">
   <app-navbar [currentRoute]="currentRoute" />
   <div class="px-5 py-4 content">
     <router-outlet></router-outlet>

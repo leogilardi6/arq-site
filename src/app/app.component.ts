@@ -31,12 +31,12 @@ export class AppComponent implements OnInit, OnDestroy {
         this.currentRoute = data.state.root.firstChild?.data['title'];
       }
     });
-    this.backgroundInt = setInterval(() => {
-      this.currentImageIndex =
-        (this.currentImageIndex + 1) % backgrounds.length;
-      this.currentImage = backgrounds[this.currentImageIndex];
-      console.log('IMagen', this.currentImage);
-    }, 10000);
+    // this.backgroundInt = setInterval(() => {
+    //   this.currentImageIndex =
+    //     (this.currentImageIndex + 1) % backgrounds.length;
+    //   this.currentImage = backgrounds[this.currentImageIndex];
+    //   console.log('IMagen', this.currentImage);
+    // }, 10000);
   }
 
   ngOnChanges() {}

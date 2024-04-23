@@ -9,6 +9,17 @@ export const gallery = [
         first_image: true,
         width: 30,
         height: 350,
+        coverImage: './assets/images/projects/background.jpg',
+        image_text:
+          'Commodo proident amet ipsum cillum sit ea excepteur voluptate sit fugiat sunt enim ut incididunt. Nulla sunt ea fugiat ea proident sit culpa minim consectetur ipsum pariatur non. Cillum qui duis cupidatat qui aliquip. Ipsum duis officia labore incididunt fugiat incididunt veniam. In velit do exercitation cupidatat elit dolor nostrud amet. Est dolor enim aliqua amet.',
+      },
+      {
+        id: 5,
+        image_title: 'Image 1 Project 1',
+        first_image: true,
+        width: 30,
+        height: 350,
+        coverImage: './assets/images/projects/background.jpg',
         image_text:
           'Commodo proident amet ipsum cillum sit ea excepteur voluptate sit fugiat sunt enim ut incididunt. Nulla sunt ea fugiat ea proident sit culpa minim consectetur ipsum pariatur non. Cillum qui duis cupidatat qui aliquip. Ipsum duis officia labore incididunt fugiat incididunt veniam. In velit do exercitation cupidatat elit dolor nostrud amet. Est dolor enim aliqua amet.',
       },
@@ -18,6 +29,7 @@ export const gallery = [
         first_image: false,
         width: 50,
         height: 150,
+        coverImage: './assets/images/projects/background.jpg',
         image_text:
           'Commodo proident amet ipsum cillum sit ea excepteur voluptate sit fugiat sunt enim ut incididunt. Nulla sunt ea fugiat ea proident sit culpa minim consectetur ipsum pariatur non. Cillum qui duis cupidatat qui aliquip. Ipsum duis officia labore incididunt fugiat incididunt veniam. In velit do exercitation cupidatat elit dolor nostrud amet. Est dolor enim aliqua amet.',
       },
@@ -27,6 +39,7 @@ export const gallery = [
         first_image: true,
         width: 30,
         height: 150,
+        coverImage: './assets/images/projects/background.jpg',
         image_text:
           'Commodo proident amet ipsum cillum sit ea excepteur voluptate sit fugiat sunt enim ut incididunt. Nulla sunt ea fugiat ea proident sit culpa minim consectetur ipsum pariatur non. Cillum qui duis cupidatat qui aliquip. Ipsum duis officia labore incididunt fugiat incididunt veniam. In velit do exercitation cupidatat elit dolor nostrud amet. Est dolor enim aliqua amet.',
       },

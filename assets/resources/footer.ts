@@ -13,14 +13,16 @@ export const footer_items = {
       image: './assets/images/social/whatsapp.svg',
       front_text: 'Whatsapp',
       id: 1,
-      route: 'https://www.facebook.com',
+      route: 'https://wa.me/5492923643731?text=',
+      message: ` Este es un mensaje para test y que 
+      se redirija al whatsapp.`,
     },
     {
       item: 'instagram',
       image: './assets/images/social/instagram.svg',
       front_text: 'Instagram',
       id: 2,
-      route: 'https://www.instagram.com',
+      route: 'https://www.instagram.com/arq.leonelroht?igsh=cGhkeHI3bnp0NDQw',
     },
   ],
 };

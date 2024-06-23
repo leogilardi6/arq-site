@@ -1,10 +1,20 @@
-.nav-background{
-    background-color: #00000026;
-    position: sticky;
-    z-index: 1;
-    top: 0px;
+.nav-background {
+  background-color: #00000026;
+  position: sticky;
+  z-index: 1;
+  top: 0px;
 }
 
-.nav_item-camel{
-    text-transform: capitalize;    
+.nav_item-camel {
+  text-transform: capitalize;
+}
+
+.arq-name {
+  font-family: "Futura";
+}
+
+@media screen and (max-width: 1024px) {
+  .hide-first-mobile li:first-of-type {
+    display: none;
+  }
 }

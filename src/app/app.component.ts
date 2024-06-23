@@ -6,7 +6,7 @@ import { NavbarComponent } from './sections/navbar/navbar.component';
 import { FooterComponent } from './sections/footer/footer.component';
 import { NgStyle } from '@angular/common';
 import { backgrounds } from '../assets/images/backgrounds/backgrounds';
-import { Subscription, interval } from 'rxjs';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-root',
@@ -24,13 +24,26 @@ export class AppComponent implements OnInit, OnDestroy {
   private router = inject(Router);
   backgroundInt: any;
 
+  breakpointObserver = inject(BreakpointObserver);
+
   ngOnInit() {
     initFlowbite();
     this.router.events.subscribe((data) => {
       if (data instanceof RoutesRecognized) {
         this.currentRoute = data.state.root.firstChild?.data['title'];
+
+        if (this.currentRoute === 'home' && window.innerWidth < 1024) {
+          this.router.navigateByUrl('/projects');
+        }
       }
     });
+    this.breakpointObserver
+      .observe(['(max-width: 1024px)'])
+      .subscribe((result) => {
+        if (result.matches && this.currentRoute === 'home') {
+          this.router.navigate(['/projects']);
+        }
+      });
     // this.backgroundInt = setInterval(() => {
     //   this.currentImageIndex =
     //     (this.currentImageIndex + 1) % backgrounds.length;

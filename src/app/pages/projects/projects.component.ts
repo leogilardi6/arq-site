@@ -10,19 +10,19 @@ import { Router } from '@angular/router';
   styleUrl: './projects.component.scss',
 })
 export class ProjectsComponent {
-  show_background = signal(0);
+  show_background = signal('');
   projects = projects_resource;
   router = inject(Router);
 
-  onImgMouseover(id: number) {
+  onImgMouseover(id: string) {
     this.show_background.set(id);
   }
 
-  onImgMouseout(id: number) {
-    this.show_background.set(0);
+  onImgMouseout(id: string) {
+    this.show_background.set('');
   }
 
-  navigateTo(project_id: number) {
+  navigateTo(project_id: string) {
     this.router.navigateByUrl(`/projects/${project_id}`);
   }
 }

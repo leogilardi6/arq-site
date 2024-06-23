@@ -1,18 +1,18 @@
 .project-container {
-    position: relative;
+  position: relative;
 
-    .item {
-        align-items: center;
-        align-items: center;
-        background: #00000052;
-        border-radius: 5px;
-        color: white;
-        cursor: pointer;
-        display: flex;
-        font-size: 30px;
-        height: 100%;
-        justify-content: center;
-        position: absolute;
-        width: 100%;
-    }
+  .item {
+    align-items: center;
+    align-items: center;
+    background: #00000052;
+    // border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    font-size: 30px;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+  }
 }

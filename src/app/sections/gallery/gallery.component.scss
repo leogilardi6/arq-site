@@ -1,7 +1,24 @@
 .gallery {
   display: flex;
-  flex-wrap: wrap;
-  .content {
-    background-color: red;
+  gap: 16px;
+  margin-bottom: 16px;
+  position: relative;
+
+  .text {
+    color: white;
+    font-weight: 500;
+    padding: 16px;
   }
+  .content {
+    margin-bottom: 0px;
+  }
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
 }

@@ -1,11 +1,12 @@
 import { NgStyle } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { gallery } from '../../../assets/resources/gallery';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-gallery',
   standalone: true,
-  imports: [NgStyle],
+  imports: [NgStyle, NgOptimizedImage],
   templateUrl: './gallery.component.html',
   styleUrl: './gallery.component.scss',
 })

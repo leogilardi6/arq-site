@@ -1,21 +1,36 @@
-<section class="gallery">
+<section>
   @for (content of project_content; track content.id) { @if (content.image_text)
   {
-  <div
-    [ngStyle]="{ width: content.width + 'pc', height: content.height + 'px' }"
-    class="content"
-  >
-    {{ content.image_title }}
+  <div class="gallery">
+    @if(content.coverImage){
+    <div
+      [ngStyle]="{ width: content.width + 'pc', height: content.height + 'px' }"
+      class="content"
+    >
+      <img
+        class="h-full max-w-full"
+        [src]="content.coverImage"
+        [alt]="content.image_title"
+      />
+    </div>
+    } @if(content.image_text){
+    <span
+      class="text"
+      [ngStyle]="{
+        width: 100 - (content.coverImage ? content.width : 0) + 'pc'
+      }"
+      [innerHTML]="content.image_text"
+    >
+    </span>
+    }
   </div>
-  <span [ngStyle]="{ width: 100 - content.width + 'pc' }">
-    {{ content.image_text }}
-  </span>
-  }@else{
-  <div
-    [ngStyle]="{ width: content.width + 'pc', height: content.height + 'px' }"
-    class="content"
-  >
-    {{ content.image_title }}
+  } @else{
+  <div class="content">
+    <img
+      class="h-full max-w-full"
+      [src]="content.coverImage"
+      [alt]="content.image_title"
+    />
   </div>
   } }
 </section>

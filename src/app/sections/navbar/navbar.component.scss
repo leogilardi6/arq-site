@@ -1,5 +1,11 @@
 .nav-background {
   background-color: #00000026;
+  &.light {
+    background-color: rgba(250, 250, 250, 0.66);
+    & > * {
+      color: black !important;
+    }
+  }
   position: sticky;
   z-index: 1;
   top: 0px;
@@ -7,6 +13,10 @@
 
 .nav_item-camel {
   text-transform: capitalize;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .arq-name {

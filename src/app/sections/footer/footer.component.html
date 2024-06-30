@@ -1,7 +1,7 @@
-<section class="footer">
+<section class="footer light">
   <div class="info">
     @for (item of items.info; track item.id) {
-    <span class="font-semibold whitespace-nowrap text-white cursor-pointer">
+    <span class="font-semibold whitespace-nowrap text-black cursor-pointer">
       {{ item.content }}
     </span>
     }
@@ -10,7 +10,7 @@
     @for (item of items.social; track item.id) {
     <div class="social-content">
       <span
-        class="font-semibold whitespace-nowrap text-white cursor-pointer"
+        class="font-semibold whitespace-nowrap text-black cursor-pointer"
         (click)="navigate(item)"
         >{{ item.front_text }}</span
       >

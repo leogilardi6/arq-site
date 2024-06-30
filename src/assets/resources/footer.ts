@@ -1,6 +1,6 @@
 export const footer_items = {
   info: [
-    { item: 'mail', content: 'LeonelRoht@gmail.com', id: 1 },
+    { item: 'mail', content: 'leonelroht.arq@gmail.com ', id: 1 },
     {
       item: 'location',
       content: 'Bahia Blanca, Buenos Aires, Argentina',
@@ -11,7 +11,7 @@ export const footer_items = {
     {
       item: 'whatsapp',
       image: './assets/images/social/whatsapp.svg',
-      front_text: 'Whatsapp',
+      front_text: 'WhatsApp',
       id: 1,
       route: 'https://wa.me/5492923643731?text=',
       message: ` Este es un mensaje para test y que 

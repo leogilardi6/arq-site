@@ -1,7 +1,8 @@
 export const nav_items = {
-  text_normal: 'Leonel Roht',
+  text_normal: 'Leonel',
   has_divider: true,
-  text_bold: 'Arquitecto',
+  text_bold: 'roht',
+  text_title: 'Arquitecto',
   home_section: { title: 'home', route: 'home' },
   sections: [
     { title: 'home', id: 1, route: '' },

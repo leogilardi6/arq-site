@@ -35,9 +35,6 @@ export class ContactComponent {
   }
 
   submitForm() {
-    console.log('Entra?>');
-
-    console.log(this.contactForm.controls['full_name']);
     if (this.contactForm?.valid) {
       // Aquí puedes enviar los datos del formulario al servidor o realizar otras acciones
       emailjs.send(
@@ -51,19 +48,7 @@ export class ContactComponent {
         },
         'jo9_Jmf_6_6rzEd2P'
       );
-      // emailjs
-      //   .send('service_642dw7a', 'template_027clgk', this.contactForm.controls)
-      //   .then(
-      //     (result: EmailJSResponseStatus) => {
-      //       console.log(result.text);
-      //       // Aquí puedes manejar la respuesta exitosa, como mostrar un mensaje al usuario
-      //     },
-      //     (error) => {
-      //       console.log(error.text);
-      //       // Aquí puedes manejar el error, como mostrar un mensaje al usuario
-      //     }
-      //   );
-      console.log(this.contactForm.value);
+      this.contactForm.reset();
     }
   }
 

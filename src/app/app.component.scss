@@ -1,9 +1,12 @@
 .app-container {
   background-color: rgb(65, 65, 65);
+  &.light {
+    background-color: white;
+  }
   background-size: cover;
   transition: 1s linear background-image;
   .content {
-    min-height: calc(100vh - 160px);
+    min-height: calc(100vh - 115px);
     overflow: auto;
   }
 }

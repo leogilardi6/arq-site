@@ -1,6 +1,6 @@
 export const footer_items = {
   info: [
-    { item: 'mail', content: 'LeonelRoht@gmail.com', id: 1 },
+    { item: 'mail', content: 'leonelroht.arq@gmail.com ', id: 1 },
     {
       item: 'location',
       content: 'Bahia Blanca, Buenos Aires, Argentina',
